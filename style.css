@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body {
+    background-color: (250, 247, 247);
+} 
+
+.header {
+    display: flex;
+    height: 35px;
+    background-color: #F4F5F5;
+    align-items: center;
+    
+}
+.header .call-me {
+    flex-basis: 50%;
+    display: flex;
+    padding-left: 5px;
+}
+.header .call-me .call-icon i {
+    margin-right: 5px;
+    height: 1px;
+}
+.header .login-section {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    
+}
+.header .login-section .item {
+    justify-content: space-around;
+    flex-basis: 45% ;
+    border-right: 1px solid black;
+    padding-left: 5px;
+}
+
+/* MENU...... */
+.menu {
+    height: 115px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    color: #000;
+}
+.menu .menu-d {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #edca3e; */
+}
+.menu .menu-d .d {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 400px;
+    /* background-color: #232014; */
+}
+.menu .menu-d .d1 a {
+    text-decoration: none;
+    
+    color: black;
+    padding-left: 5px;
+    padding-left: 5px;
+    display: inline-block;
+    padding-left: 5px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+.menu .menu-d .d2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.menu .menu-d .d2 .it {
+    color: #49CFC2;
+    
+}
+.menu .menu-d .d3 {
+    display: flex;
+    justify-content: space-between;
+    color: #612725;
+}
+.menu .menu-d .d3 .btn {
+    text-align: center;
+    padding-top: 5px;
+    color: #0d201e;
+    
+}
+
+
+.hero-section {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-section .triangle-down {
+    width: 0;
+	height: 0;
+	border-left: 145px solid transparent;
+	border-right: 145px solid transparent;
+	border-top: 70px solid #fff;
+}
+.hero-section-pic  {
+    display: flex;
+    justify-content: center;
+    background-image: url("heropic3.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+
+}
+
+/* Spring  text decoration ...... */
+
+/* text content  */
+.hero-section-pic .heading {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+}
+
+.hero-section-pic .heading #spring {
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-style:normal;
+    font-size: 100px;
+    text-shadow: 2px 5px 21px #0a1f1e;
+    color: #e9fdfd;
+}
+
+.hero-section-pic .heading #collection {
+    font-size: 63px;
+    font-family: "Lato", sans-serif;
+    font-weight: 350;
+    color: #232014;
+}
+.hero-section-pic .heading #available {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-style: normal;
+    color: #342f1e;
+}
+
+/* offer section decor.....  */
+.offers-section {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.offers-section .offers {
+    width: 85%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-column-gap: 23px;
+    background-color: #49CFC2; 
+}
+
+.offers-section .offers .offer {
+    border: 1px solid black; 
+    color: rgb(254, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.offers-section .offer1 , .offers-section .offer3 {
+    background-color: #49CFC2;
+
+}
+.offers-section .offer2 {
+    background-color: #081715;
+}
+.offers-section .offers .offer .icon {
+    padding-left: 20px;
+    padding-right: 25px;
+   
+}
+
+.offers-section .offers .offer .text {
+    font-size: 25px;
+
+}
+
+
+/* deals box decor...... */
+
+
+.deals-box {
+    margin-top: 20px;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+}
+.deals-box .deals {
+    width: 85%;
+    height: 750px;
+    background-color: pink; 
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-column-gap: 23px;
+    grid-row-gap: 23px;
+
+}
+
+.deals-box .deal2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.deals-box .deal {
+    border: 2px solid rgb(225, 223, 223);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  
+}
+.deals-box .deal2 { 
+    background-image: url("model2.jpg");
+    background-size: cover;
+}
+.deals-box .deals .deal2 .text-msg {
+    position: relative;
+    left: 20px;
+    height: 100px;
+}
+.deals-box .deals .deal2 .text-msg .springs {
+    font-size: 25px;
+}
+.deals-box .deals .deal2 .text-msg .col {
+    font-size: 40px;
+}
+.btn {
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+    background-color: #49CFC2;
+    color: rgb(254, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+/* deal 2...... */
+.deals-box .deals .deal1 {
+    background-image: url("bluepurse.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.deals-box .deals .deal1 .btn{
+    position: relative;
+    top: -40px;
+}
+
+
+/* deals 3 decor....... */
+.deals-box .deals .deal3 {
+    background-image: url("whiteshoes.jpg");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.deals-box .deals .deal3 .text-msg {
+    position: relative;
+    left: -100px;
+    top: -200px;
+}
+.deals-box .deals .deal4 {
+    background-image: url("model3.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deals-box .deals .deal4 .text-msg {
+    position: relative;
+    top: 50px;
+}
+
+.deals-box .deals .deal5 {
+    background-image: url("heels.jpg");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.deals-box .deals .deal5 .btn {
+    position: relative;
+    left: 140px;
+    top: -91px;
+}
+.deal-msg {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(250, 247, 247);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-box {
+    width: 100%;
+    height: 380px;
+    background-color: pink; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.products-box .products {
+    background-color: green; 
+    width: 85%;
+    height: 380px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-column-gap: 16px;
+}
+.products-box .products .product {
+    border: 1px solid black; 
+    border-radius: 1px;
+}
+.products-box .products .product .item {
+    width:300px;
+    height: 300px;
+    background-image: url("chashma.jpg"); 
+    background-size: cover;
+}
+.products-box .products .product .item .tag {
+    width: 60px;
+    height: 60px;
+    background-color: #49CFC2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.products-box .products .product .msg .cost {
+    font-size: 30px;
+
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: pink; 
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.footer .details{
+    width: 95%;
+    height: 200px;
+    background-color: #05445E;
+    background-color: green; 
+    display: grid;
+    grid-template-columns: 339px 329px 324px 400px;
+    padding-top: 10px;
+    color: #d1cccc;
+}
+.footer .details .box{
+   padding-left: 53px;
+  
+}
+.footer .details .box ul {
+    list-style-type: none;
+} 
+
+
